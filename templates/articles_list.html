@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<body>
+  {% for article in articles %}
+      <a href="{% url 'article_detail' article.pk%}">{{ article.title }}</a>
+   {%  endfor%}
+</body>
+</html>
+{#<a> a表示一行 加入。pk后能够点击进入页面 p表示分行#}
